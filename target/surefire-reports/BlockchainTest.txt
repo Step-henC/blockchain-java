@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: BlockchainTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in BlockchainTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.973 s - in BlockchainTest

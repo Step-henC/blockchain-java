@@ -8,7 +8,7 @@ public class StringUtilsTest {
 
   @Test
   public void testApplySha256() {
-    Block block = new Block("mock", "0");
+    Block block = new Block("mock", null, null);
 
     String hash = block.calculateHash();
 

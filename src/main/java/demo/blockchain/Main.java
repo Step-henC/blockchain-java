@@ -19,15 +19,15 @@ public class Main {
 
         Blockchain blockChain = new Blockchain(5);
 
-        blockChain.addBlock(new Block("Hi, I am the first block", "0"));
+        blockChain.addBlock(new Block("Hi, I am the first block", null, null));
         blockChain.getBlockAtIndex(0).mineBlock(blockChain.difficulty);
 
         blockChain.addBlock(
-                new Block("Hi, I am the second block", blockChain.getBlockAtIndex(blockChain.getSize() - 1).hash));
+                new Block("Hi, I am the second block", blockChain.getBlockAtIndex(blockChain.getSize() - 1), null));
         blockChain.getBlockAtIndex(1).mineBlock(blockChain.difficulty);
 
         blockChain.addBlock(
-                new Block("Hi, I am the third block", blockChain.getBlockAtIndex(blockChain.getSize() - 1).hash));
+                new Block("Hi, I am the third block", blockChain.getBlockAtIndex(blockChain.getSize() - 1), null));
         blockChain.getBlockAtIndex(2).mineBlock(blockChain.difficulty);
 
         String blockChainJson = new GsonBuilder().setPrettyPrinting().create().toJson(blockChain);
